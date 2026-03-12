@@ -45,6 +45,13 @@ const Footer: React.FC = () => {
             >
               WA
             </a>
+            <a
+              href="https://github.com/albberrrt/awesome-pirulito"
+              aria-label="Github"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-900/60 text-[0.7rem] transition hover:border-pink-400 hover:text-pink-300"
+            >
+              GH
+            </a>
           </div>
         </div>
       </div>
