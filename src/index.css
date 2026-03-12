@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: #020617;
+}
+
+body {
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+.hero-glow {
+  position: relative;
+}
+
+.hero-glow::after {
+  content: '';
+  position: absolute;
+  inset: auto 10% -40px;
+  height: 80px;
+  background: radial-gradient(ellipse at center, rgba(244, 114, 182, 0.5), transparent 65%);
+  opacity: 0.8;
+  filter: blur(32px);
+  pointer-events: none;
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+}
+
+.float-soft {
+  animation: soft-float 6s ease-in-out infinite;
+}
+
+@keyframes section-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-fade {
+  animation: section-fade-up 0.7s ease-out both;
+}
+
+@keyframes pill-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 30px 0 rgba(56, 189, 248, 0.25);
+  }
+}
+
+.pill-glow {
+  animation: pill-glow 3.2s ease-in-out infinite;
+}
