@@ -1,4 +1,4 @@
-import logoImg from '../assets/7Belo-chamativo.png'
+import logoImg from '../assets/7belo-chamativo.png'
 
 const Navbar: React.FC = () => {
   return (
